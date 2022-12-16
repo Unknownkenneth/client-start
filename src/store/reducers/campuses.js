@@ -12,7 +12,13 @@ const allCampuses = (state = [], action) => {  // Empty array as default Initial
   switch (action.type) {
     case at.FETCH_ALL_CAMPUSES:
       return action.payload;
-    default:
+      case at.ADD_CAMPUSES:
+        return [...state, action.payload]
+        case:
+        return
+        case:
+        return 
+            default:
       // If the Reducer doesn't recognize the Action Type, returns the previous (current) State unchanged.
       return state;
   }
